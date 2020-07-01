@@ -1,0 +1,178 @@
+body {
+    background-color: rgb(189, 189, 189);
+    text-align: center;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: gray;
+    background: linear-gradient(rgb(165, 165, 165) 5%, gray 10%, gray 50%, rgb(114, 113, 113) 50%, rgb(114, 113, 113) 90%, rgb(165, 165, 165) 95%);
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 100px;
+    /* position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    height: 35px; */
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    line-height: 35px;
+    font-size: 0.8rem;
+    height: 35px;
+    border-top: 1px rgb(131, 130, 130) solid;
+    border-bottom: 1px rgb(131, 130, 130) solid;
+    border-left: 1px rgb(131, 130, 130) solid;
+}
+
+.nav-list li {
+    flex: 1;
+}
+
+.nav-list li:hover > a {
+    background: linear-gradient(rgb(145, 145, 145) 5%, rgb(117, 117, 117) 10%, rgb(117, 117, 117) 50%, rgb(99, 98, 98) 50%, rgb(99, 98, 98) 90%, rgb(145, 145, 145) 95%);
+}
+
+.nav-list a {
+    height: 100%;
+    display: block;
+    /* width: 100px; */
+    margin: 0;
+    border-right: 1px rgb(109, 108, 108) solid;
+    color: white;
+}
+
+.search {
+    flex: 2;
+}
+
+
+.nav-logo > span{
+    background-image: url("https://web.archive.org/web/20140301005411im_/http://images.apple.com/global/nav/images/globalnav_text.png");
+    background-repeat: no-repeat;
+    /* background-origin: padding-box; */
+    background-position: 50% 3px;
+    width: 100%;
+    height: 27px;
+    display: block;
+    margin: 0;
+}
+
+.main-heading {
+    background-image: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero_2x.jpg");
+    background-size: 100% auto;
+    background-position: 0 -1840px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    padding-top: 175px;
+    height: 500px;
+    color: white;
+    /* font-size: 30px; */
+}
+
+
+
+.main-heading h1, .main-heading h2, .main-heading h3 {
+    margin: 0 20%;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.main-heading h2 {
+    font-size: 25px;
+}
+
+.main-heading div {
+    margin: 20px 20%;
+    background-image: url("https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/cta_your_verse_27pt_2x.png");
+    background-size: auto 65px;
+    background-repeat: no-repeat;
+    background-position: 50% 1px;
+    /* object-fit: contain; */
+    margin-top: 30px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.main-heading div:hover {
+    background-position: 50% -32px;
+}
+
+aside {
+    position: absolute;
+    top: 470px;
+    display: flex;
+}
+
+aside > div {
+    width: 25%;
+}
+
+aside > div img {
+    width: 100%;
+}
+
+footer {
+    position: absolute;
+    top: 670px;
+    padding: 20px 10%;
+    background-color: white;
+    font-size: x-small;
+    right: 0;
+    left: 0;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.links ul {
+    padding: 0;
+    margin: 0;
+}
+
+.links li {
+    display: inline-block;
+    cursor: pointer;
+    border-right: 1px lightgray solid;
+    padding: 0 5px;
+}
+
+.links li:last-child {
+    border: none;
+}
+
+.links li:hover {
+    text-decoration: underline;
+}
+
+.links > span {
+    display: inline-block;
+}
+
+.copyright {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.copyright span {
+    padding-right: 5px;
+}
+
+.copyright span:last-child {
+    border-left: 1px lightgray solid;
+    padding-left: 5px;
+}
